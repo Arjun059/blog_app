@@ -28,6 +28,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['blog-app-oynd.onrender.com','*.onrender.com']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://blog-app-oynd.onrender.com',
+    'https://*.onrender.com',
+    'http://*.onrender.com',
+]
+
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_ALL_ORIGINS = True
