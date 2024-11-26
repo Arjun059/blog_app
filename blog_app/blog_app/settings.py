@@ -77,23 +77,23 @@ WSGI_APPLICATION = 'blog_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # Use MySQL database engine
-        'NAME': 'blog_app',         # Database name
-        'USER': 'root',         # Database username
-        'PASSWORD': 'badal@123', # Database password   
-        'HOST': '127.0.0.1',                  # Database host (use '127.0.0.1' or IP for remote)
-        'PORT': '3306',                       # Default MySQL port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',  # Use MySQL database engine
+#         'NAME': 'blog_app',         # Database name
+#         'USER': 'root',         # Database username
+#         'PASSWORD': 'badal@123', # Database password   
+#         'HOST': '127.0.0.1',                  # Database host (use '127.0.0.1' or IP for remote)
+#         'PORT': '3306',                       # Default MySQL port
+#     }
+# }
 
 
 # Password validation
